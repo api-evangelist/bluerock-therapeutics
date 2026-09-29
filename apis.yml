@@ -1,23 +1,73 @@
 aid: bluerock-therapeutics
+
 name: BlueRock Therapeutics
-description: 'BlueRock Therapeutics is a company surfaced via the API Evangelist harvest backlog (source:
-  secondary-market) and added to the network as a stub for full-pipeline profiling.'
+
+image: https://www.bluerocktx.com/wp-content/uploads/2023/06/BRT_Open_GraphIMG.jpg
+
+description: 'BlueRock Therapeutics is a biopharmaceutical company focused on developing transformative cell therapies for neurodegenerative and ophthalmic diseases. Leveraging advanced stem cell technologies, the company aims to address unmet medical needs in Parkinson’s disease, Alzheimer’s disease, and retinal disorders, advancing candidates through preclinical and clinical stages to bring innovative treatments to patients.'
+
 url: https://raw.githubusercontent.com/api-evangelist/bluerock-therapeutics/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:secondary-market
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-09-29 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-09-29'
+
 modified: '2026-09-29'
+
 tags:
-- Company
-apis: []
+- Biopharma
+- Cell Therapy
+- Neurodegenerative
+- Ophthalmology
+- Clinical Trials
+- Biotechnology
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
 common:
+- type: Hosts
+  url: hosts/bluerock-therapeutics-hosts.yml
+- type: Vendors
+  url: vendors/bluerock-therapeutics-vendors.yml
+- type: TermsOfService
+  url: https://www.bluerocktx.com/terms-and-conditions
+- type: PrivacyPolicy
+  url: https://www.bluerocktx.com/privacy-policy
+- type: Newsroom
+  url: https://www.bluerocktx.com/about/news/
+- type: Leadership
+  url: https://www.bluerocktx.com/about/leadership/
+- type: GitHubOrganization
+  url: https://github.com/bluerocktx
+- type: DomainSecurity
+  url: security/bluerock-therapeutics-domain-security.yml
 - type: Website
-  url: https://forgeglobal.com/bluerock-therapeutics_stock/
+  url: https://www.bluerocktx.com
+
+apis: []
+
+x-coverage:
+  state: none
+  reason: no-developer-program
+  detail: BlueRock Therapeutics provides no public developer program or API documentation.
+  evidence:
+    - url: https://api.bluerocktx.com
+      status: 0
+  checked: '2026-09-29'
+x-enrichment:
+  date: '2026-09-29'
+  status: enriched
+  artifacts_added: 4
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local,regulatory=local
